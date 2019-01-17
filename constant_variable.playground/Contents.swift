@@ -1,4 +1,3 @@
-//: Playground - noun: a place where people can play
 
 import UIKit
 
@@ -37,3 +36,4 @@ print(year2)
 
 print("handsome2:\(type(of:handsome2))")
 print(handsome2)
+
