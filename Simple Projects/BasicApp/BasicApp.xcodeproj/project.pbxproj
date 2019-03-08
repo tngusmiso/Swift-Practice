@@ -13,6 +13,7 @@
 		3AC12A872232120400B1BC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC12A862232120400B1BC41 /* Assets.xcassets */; };
 		3AC12A8A2232120400B1BC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC12A882232120400B1BC41 /* LaunchScreen.storyboard */; };
 		3AC12A92223213D400B1BC41 /* UIButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A91223213D400B1BC41 /* UIButtonController.swift */; };
+		3AC12A9422323E7700B1BC41 /* UISliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9322323E7700B1BC41 /* UISliderController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3AC12A892232120400B1BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AC12A8B2232120400B1BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AC12A91223213D400B1BC41 /* UIButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonController.swift; sourceTree = "<group>"; };
+		3AC12A9322323E7700B1BC41 /* UISliderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3AC12A7E2232120400B1BC41 /* BasicApp */ = {
 			isa = PBXGroup;
 			children = (
+				3AC12A9322323E7700B1BC41 /* UISliderController.swift */,
 				3AC12A7F2232120400B1BC41 /* AppDelegate.swift */,
 				3AC12A812232120400B1BC41 /* ViewController.swift */,
 				3AC12A832232120400B1BC41 /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC12A9422323E7700B1BC41 /* UISliderController.swift in Sources */,
 				3AC12A92223213D400B1BC41 /* UIButtonController.swift in Sources */,
 				3AC12A822232120400B1BC41 /* ViewController.swift in Sources */,
 				3AC12A802232120400B1BC41 /* AppDelegate.swift in Sources */,
