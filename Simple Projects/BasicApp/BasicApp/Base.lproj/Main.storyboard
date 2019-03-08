@@ -77,6 +77,46 @@
             </objects>
             <point key="canvasLocation" x="1592.8" y="132.68365817091455"/>
         </scene>
+        <!--Indicator Controller-->
+        <scene sceneID="0OZ-Gd-2z0">
+            <objects>
+                <viewController id="B0b-b9-ZsP" customClass="IndicatorController" customModule="BasicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HO3-tA-ZDY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLq-vn-tYz">
+                                <rect key="frame" x="103" y="357" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="B0b-b9-ZsP" eventType="touchUpInside" id="j0c-bh-JRv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-Kp-LtQ">
+                                <rect key="frame" x="225" y="357" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="B0b-b9-ZsP" eventType="touchUpInside" id="MyV-D4-Gik"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-Gm-wSq">
+                                <rect key="frame" x="177" y="233" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="svw-AD-zq6"/>
+                    </view>
+                    <connections>
+                        <outlet property="idct_main" destination="iL3-Gm-wSq" id="0pZ-fO-JDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUg-Rh-B9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="903"/>
+        </scene>
         <!--Slider Controller-->
         <scene sceneID="lrY-WG-yGz">
             <objects>
@@ -197,7 +237,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f58-Fs-6FU">
-                                <rect key="frame" x="34" y="111" width="92" height="30"/>
+                                <rect key="frame" x="37" y="110" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button, Label"/>
                                 <connections>
@@ -210,6 +250,14 @@
                                 <state key="normal" title="Slider"/>
                                 <connections>
                                     <segue destination="wug-Ya-f7e" kind="show" id="TT2-k0-ehN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKi-67-BQ9">
+                                <rect key="frame" x="37" y="223" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Activity Indicator"/>
+                                <connections>
+                                    <segue destination="B0b-b9-ZsP" kind="show" id="QI6-Eq-Wxy"/>
                                 </connections>
                             </button>
                         </subviews>
