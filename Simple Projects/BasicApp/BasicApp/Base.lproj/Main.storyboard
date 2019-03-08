@@ -75,7 +75,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eIk-Gu-Fzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1593" y="133"/>
+        </scene>
+        <!--View Hierarchy Controller-->
+        <scene sceneID="wEE-sa-AlL">
+            <objects>
+                <viewController id="ntm-Dk-AOk" customClass="ViewHierarchyController" customModule="BasicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xlX-9X-lzN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" label="SuperView"/>
+                        <viewLayoutGuide key="safeArea" id="qC8-GI-5FM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tBV-u3-ile" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="883"/>
         </scene>
         <!--Indicator Controller-->
         <scene sceneID="0OZ-Gd-2z0">
@@ -115,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUg-Rh-B9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="783"/>
+            <point key="canvasLocation" x="1593" y="883"/>
         </scene>
         <!--Image Progress Controller-->
         <scene sceneID="r7B-RH-ICH">
@@ -147,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL4-9A-eg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="782"/>
+            <point key="canvasLocation" x="2257" y="883"/>
         </scene>
         <!--Slider Controller-->
         <scene sceneID="lrY-WG-yGz">
@@ -258,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vg9-3T-y1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="133"/>
+            <point key="canvasLocation" x="2257" y="133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -298,6 +314,14 @@
                                 <state key="normal" title="Image Download &amp; progress Bar"/>
                                 <connections>
                                     <segue destination="zBA-9V-dt9" kind="show" id="N34-EI-t6J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSo-dr-s6x">
+                                <rect key="frame" x="37" y="344" width="142" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Core Graphic, Frame"/>
+                                <connections>
+                                    <segue destination="ntm-Dk-AOk" kind="show" id="SW5-cL-SqE"/>
                                 </connections>
                             </button>
                         </subviews>
