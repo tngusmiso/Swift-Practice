@@ -101,12 +101,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Tab-7D-Je0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Tab-7D-Je0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dGC-uC-qnq">
-                                    <rect key="frame" x="0.0" y="117.5" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="161.5" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Add Item"/>
                                     <connections>
@@ -131,6 +130,43 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="dpo-Mz-2jj" customClass="CustomTableViewCell" customModule="BasicApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dpo-Mz-2jj" id="tfc-wR-lOy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Di2-FD-ldp">
+                                                    <rect key="frame" x="15" y="11" width="42" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-G3-nzk">
+                                                    <rect key="frame" x="319" y="11" width="42" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Di2-FD-ldp" secondAttribute="bottom" id="8FT-nk-vSS"/>
+                                                <constraint firstItem="Di2-FD-ldp" firstAttribute="top" secondItem="tfc-wR-lOy" secondAttribute="topMargin" id="Bjl-8e-CJt"/>
+                                                <constraint firstItem="P1f-G3-nzk" firstAttribute="top" secondItem="tfc-wR-lOy" secondAttribute="topMargin" id="CqS-0r-PJb"/>
+                                                <constraint firstItem="Di2-FD-ldp" firstAttribute="top" secondItem="tfc-wR-lOy" secondAttribute="topMargin" id="FSv-bV-xSR"/>
+                                                <constraint firstItem="Di2-FD-ldp" firstAttribute="bottom" secondItem="tfc-wR-lOy" secondAttribute="bottomMargin" id="GIX-FB-3OF"/>
+                                                <constraint firstItem="Di2-FD-ldp" firstAttribute="leading" secondItem="tfc-wR-lOy" secondAttribute="leadingMargin" id="Qaj-Yh-1lQ"/>
+                                                <constraint firstItem="Di2-FD-ldp" firstAttribute="leading" secondItem="tfc-wR-lOy" secondAttribute="leadingMargin" id="UaG-Vo-RCv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="P1f-G3-nzk" secondAttribute="bottom" id="UeD-fb-wpm"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="P1f-G3-nzk" secondAttribute="trailing" constant="-1" id="bKh-te-fbh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="leftLabel" destination="Di2-FD-ldp" id="vua-fr-on7"/>
+                                            <outlet property="rightLabel" destination="P1f-G3-nzk" id="Zht-3f-47c"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="O5w-Wo-ZzX" id="Ryu-mK-FTz"/>
@@ -139,6 +175,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tab-7D-Je0" firstAttribute="bottom" secondItem="wc8-ds-8CV" secondAttribute="bottom" id="9rH-yM-igQ"/>
+                            <constraint firstItem="Tab-7D-Je0" firstAttribute="top" secondItem="yiF-1f-iu0" secondAttribute="topMargin" id="EAa-ZT-13p"/>
+                            <constraint firstItem="Tab-7D-Je0" firstAttribute="leading" secondItem="wc8-ds-8CV" secondAttribute="leading" id="ont-HW-ZkP"/>
+                            <constraint firstItem="Tab-7D-Je0" firstAttribute="trailing" secondItem="wc8-ds-8CV" secondAttribute="trailing" id="z8F-ip-NTi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wc8-ds-8CV"/>
                     </view>
                     <connections>

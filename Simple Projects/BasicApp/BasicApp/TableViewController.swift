@@ -12,9 +12,16 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
 
     // local variable
     let cellIdentifier: String = "cell"
+    let customCellIdentifier: String = "customCell"
+    
     let dateFormatter: DateFormatter = {
         let formatter: DateFormatter = DateFormatter()
         formatter.dateStyle = .medium
+        return formatter
+    }()
+    
+    let timeFormatter: DateFormatter = {
+        let formatter: DateFormatter = DateFormatter()
         formatter.timeStyle = .medium
         return formatter
     }()
@@ -50,17 +57,23 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     //row마다 해당하는 셀
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
-        
-        //cell에 포함된 데이터
         if indexPath.section<2{
+            let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
+            
             let text: String = indexPath.section == 0 ? korean[indexPath.row] : alphabet[indexPath.row]
             cell.textLabel?.text = text
+            
+            return cell
+            
         }else{
-            cell.textLabel?.text = self.dateFormatter.string(from: dates[indexPath.row])
+            let customCell:CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: self.customCellIdentifier, for: indexPath) as! CustomTableViewCell
+            
+            customCell.leftLabel.text = self.dateFormatter.string(from: self.dates[indexPath.row])
+            customCell.rightLabel.text = self.timeFormatter.string(from: self.dates[indexPath.row])
+            
+            return customCell
         }
         
-        return cell
     }
     
     //section의 title(header)
