@@ -17,6 +17,7 @@
 		3AC12A9622324EBC00B1BC41 /* IndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9522324EBC00B1BC41 /* IndicatorController.swift */; };
 		3AC12A982232501800B1BC41 /* ImageProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A972232501800B1BC41 /* ImageProgressController.swift */; };
 		3AC12A9A223294E500B1BC41 /* ViewHierarchyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A99223294E500B1BC41 /* ViewHierarchyController.swift */; };
+		3AC12A9C22329A5300B1BC41 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9B22329A5300B1BC41 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3AC12A9522324EBC00B1BC41 /* IndicatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorController.swift; sourceTree = "<group>"; };
 		3AC12A972232501800B1BC41 /* ImageProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProgressController.swift; sourceTree = "<group>"; };
 		3AC12A99223294E500B1BC41 /* ViewHierarchyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHierarchyController.swift; sourceTree = "<group>"; };
+		3AC12A9B22329A5300B1BC41 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3AC12A812232120400B1BC41 /* ViewController.swift */,
 				3AC12A832232120400B1BC41 /* Main.storyboard */,
 				3AC12A99223294E500B1BC41 /* ViewHierarchyController.swift */,
+				3AC12A9B22329A5300B1BC41 /* TableViewController.swift */,
 				3AC12A9522324EBC00B1BC41 /* IndicatorController.swift */,
 				3AC12A972232501800B1BC41 /* ImageProgressController.swift */,
 				3AC12A91223213D400B1BC41 /* UIButtonController.swift */,
@@ -153,6 +156,7 @@
 				3AC12A9422323E7700B1BC41 /* UISliderController.swift in Sources */,
 				3AC12A92223213D400B1BC41 /* UIButtonController.swift in Sources */,
 				3AC12A822232120400B1BC41 /* ViewController.swift in Sources */,
+				3AC12A9C22329A5300B1BC41 /* TableViewController.swift in Sources */,
 				3AC12A9A223294E500B1BC41 /* ViewHierarchyController.swift in Sources */,
 				3AC12A9622324EBC00B1BC41 /* IndicatorController.swift in Sources */,
 				3AC12A982232501800B1BC41 /* ImageProgressController.swift in Sources */,
