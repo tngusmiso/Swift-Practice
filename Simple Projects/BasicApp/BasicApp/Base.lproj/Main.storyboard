@@ -105,6 +105,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dGC-uC-qnq">
+                                    <rect key="frame" x="0.0" y="117.5" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Add Item"/>
+                                    <connections>
+                                        <action selector="touchUpAddButton:" destination="O5w-Wo-ZzX" eventType="touchUpInside" id="P8s-jt-UjC"/>
+                                    </connections>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Y7Z-GD-csJ" style="IBUITableViewCellStyleDefault" id="SQq-nC-YbM">
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
