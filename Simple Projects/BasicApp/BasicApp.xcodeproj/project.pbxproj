@@ -10,7 +10,6 @@
 		3AC12A802232120400B1BC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A7F2232120400B1BC41 /* AppDelegate.swift */; };
 		3AC12A822232120400B1BC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A812232120400B1BC41 /* ViewController.swift */; };
 		3AC12A852232120400B1BC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC12A832232120400B1BC41 /* Main.storyboard */; };
-		3AC12A872232120400B1BC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC12A862232120400B1BC41 /* Assets.xcassets */; };
 		3AC12A8A2232120400B1BC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC12A882232120400B1BC41 /* LaunchScreen.storyboard */; };
 		3AC12A92223213D400B1BC41 /* UIButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A91223213D400B1BC41 /* UIButtonController.swift */; };
 		3AC12A9422323E7700B1BC41 /* UISliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9322323E7700B1BC41 /* UISliderController.swift */; };
@@ -19,6 +18,10 @@
 		3AC12A9A223294E500B1BC41 /* ViewHierarchyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A99223294E500B1BC41 /* ViewHierarchyController.swift */; };
 		3AC12A9C22329A5300B1BC41 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9B22329A5300B1BC41 /* TableViewController.swift */; };
 		3AC12A9E2233AC9B00B1BC41 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9D2233AC9B00B1BC41 /* CustomTableViewCell.swift */; };
+		3AC12AA02237913900B1BC41 /* JsonParsingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12A9F2237913900B1BC41 /* JsonParsingController.swift */; };
+		3AC12AA2223791BB00B1BC41 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12AA1223791BB00B1BC41 /* Friend.swift */; };
+		3AC12AA42237A12400B1BC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AC12AA32237A12400B1BC41 /* Assets.xcassets */; };
+		3AC12AA6223BC3D000B1BC41 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC12AA5223BC3D000B1BC41 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +29,6 @@
 		3AC12A7F2232120400B1BC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AC12A812232120400B1BC41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AC12A842232120400B1BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3AC12A862232120400B1BC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AC12A892232120400B1BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AC12A8B2232120400B1BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AC12A91223213D400B1BC41 /* UIButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		3AC12A99223294E500B1BC41 /* ViewHierarchyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHierarchyController.swift; sourceTree = "<group>"; };
 		3AC12A9B22329A5300B1BC41 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3AC12A9D2233AC9B00B1BC41 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3AC12A9F2237913900B1BC41 /* JsonParsingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParsingController.swift; sourceTree = "<group>"; };
+		3AC12AA1223791BB00B1BC41 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		3AC12AA32237A12400B1BC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		3AC12AA5223BC3D000B1BC41 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +78,17 @@
 				3AC12A7F2232120400B1BC41 /* AppDelegate.swift */,
 				3AC12A812232120400B1BC41 /* ViewController.swift */,
 				3AC12A832232120400B1BC41 /* Main.storyboard */,
+				3AC12A9F2237913900B1BC41 /* JsonParsingController.swift */,
+				3AC12AA1223791BB00B1BC41 /* Friend.swift */,
 				3AC12A99223294E500B1BC41 /* ViewHierarchyController.swift */,
 				3AC12A9B22329A5300B1BC41 /* TableViewController.swift */,
 				3AC12A9D2233AC9B00B1BC41 /* CustomTableViewCell.swift */,
 				3AC12A9522324EBC00B1BC41 /* IndicatorController.swift */,
 				3AC12A972232501800B1BC41 /* ImageProgressController.swift */,
 				3AC12A91223213D400B1BC41 /* UIButtonController.swift */,
-				3AC12A862232120400B1BC41 /* Assets.xcassets */,
 				3AC12A882232120400B1BC41 /* LaunchScreen.storyboard */,
+				3AC12AA32237A12400B1BC41 /* Assets.xcassets */,
+				3AC12AA5223BC3D000B1BC41 /* Model.swift */,
 				3AC12A8B2232120400B1BC41 /* Info.plist */,
 			);
 			path = BasicApp;
@@ -144,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC12A8A2232120400B1BC41 /* LaunchScreen.storyboard in Resources */,
-				3AC12A872232120400B1BC41 /* Assets.xcassets in Resources */,
+				3AC12AA42237A12400B1BC41 /* Assets.xcassets in Resources */,
 				3AC12A852232120400B1BC41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,12 +168,15 @@
 				3AC12A9E2233AC9B00B1BC41 /* CustomTableViewCell.swift in Sources */,
 				3AC12A9422323E7700B1BC41 /* UISliderController.swift in Sources */,
 				3AC12A92223213D400B1BC41 /* UIButtonController.swift in Sources */,
+				3AC12AA6223BC3D000B1BC41 /* Model.swift in Sources */,
 				3AC12A822232120400B1BC41 /* ViewController.swift in Sources */,
 				3AC12A9C22329A5300B1BC41 /* TableViewController.swift in Sources */,
 				3AC12A9A223294E500B1BC41 /* ViewHierarchyController.swift in Sources */,
 				3AC12A9622324EBC00B1BC41 /* IndicatorController.swift in Sources */,
 				3AC12A982232501800B1BC41 /* ImageProgressController.swift in Sources */,
+				3AC12AA02237913900B1BC41 /* JsonParsingController.swift in Sources */,
 				3AC12A802232120400B1BC41 /* AppDelegate.swift in Sources */,
+				3AC12AA2223791BB00B1BC41 /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
